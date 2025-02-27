@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <style>
+      body {
+            font-family: Verdana;
+            margin: 0;
+            padding: 0;
+            background-image:url('fgk.jpg');
+            color: #333;
+            text-decoration: none;
+            background-size: cover; /* Растягиваем изображение на весь экран */
+    background-position: center center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+    background-attachment: fixed; /* Фон остается фиксированным при прокрутке */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff95;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .additional-image {
+            margin-top: 20px;
+            max-width: 100%;
+            width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            font-family: Verdana;
+        }
+
+        /* Кнопка "Вернуться назад" */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #52443e6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #a893896b;
+        }
+
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+
+        /* Кнопка для примера */
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #52443e6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #a893896b;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка "Вернуться назад" -->
+    <button class="back-button" onclick="window.location.href='index.html';">Вернуться назад</button>
+
+    <div class="container">
+        <div class="product">
+            <div class="title">Nature</div>
+            <img class="additional-image" src="a2.jpg" >
+            <div class="description">
+                Экологичный ежедневник, созданный с заботой о планете. 
+                <br>Он изготовлен из переработанных материалов и бумаги без хлора, этот ежедневник сочетает в себе стиль и ответственность.
+                <br> Каждая страница предлагает достаточно места для записей, планов и идей, а обложка выполнена из устойчивых к воздействию внешней среды материалов. 
+                <br>С этим ежедневником вы не только организуете свои дела, но и сделаете вклад в сохранение природы.
+                <br>   Цена: 2 899 р.</div>
+           
+            <a href="mailto:bandmar86@gmail.com?subject=Заказ&body=Здравствуйте,%0A%0AЯ бы хотел оформить заказ Nature."; class="btn">Купить сейчас</a>
+        </div>
+    </div>
+</body>
+</html>
