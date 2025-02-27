@@ -9,62 +9,12 @@ function openModal() {
 }
 function closeModal() {
   document.getElementById("modal").style.display = "none";
-}const modal = document.querySelector(".modal");
-const openModalBtn = document.querySelector(".open-modal");
-const closeModalBtn = document.querySelector(".close-modal");
-
-openModalBtn.addEventListener("click", () => {
-  modal.classList.add("show");
-});
-
-closeModalBtn.addEventListener("click", () => {
-  modal.classList.remove("show");
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("show");
-  }
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".reveal");
-
-  function revealOnScroll() {
-    sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        section.classList.add("visible");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll(); // Проверка при загрузке
-});
+}
 </script>
 <style>
-
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
   .responsive-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 100%;
   }
   @media (max-width: 768px) {
@@ -87,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }  
      .containse {
             max-width: 1920px;
-            height: 3565px;
+            height: auto;
             margin: 0 auto;
             background-image: url("fgk.jpg");
     background-size: cover; 
@@ -191,7 +141,7 @@ body {
         align-items: center;
     }
     .rectangle-1, .rectangle-2, .rectangle-3, .rectangle-4, .rectangle-5, .rectangle-6 {
-        width: 90%; 
+        width: 150%; 
     }
     .text-part_images_prices_2 {
         font-size: 18pt;
@@ -219,7 +169,7 @@ body {
         font-size: 18px;
     }
     .rectangle-1, .rectangle-2, .rectangle-3, .rectangle-4, .rectangle-5, .rectangle-6 {
-        width: 100%;
+        width: 150%;
     }
     .modal-content {
         width: 100%;
@@ -363,7 +313,8 @@ body {
     height: auto; 
     }
   .image-part {
-    width: 50%;
+    width: auto;
+    min-width: 55%;
     display: flex;
     justify-content: center;
     }
@@ -615,7 +566,7 @@ body {
     }
     .form-group {
         margin-bottom: 15px;
-        margin-left: 50px; #9  
+         
     }
     label {
         display: block;
@@ -688,7 +639,6 @@ footer {
             <br>
             <br>
             <br>
-            <br>
             <span class="inline-text" style="font-family: Verdana";>Цена:</span>
           </div> 
           <div class="text-part_images_prices_2">
@@ -704,7 +654,6 @@ footer {
           <div class="text_for_catalog">
           <p style="font-family: Verdana" >Nature</p></div><span style="font-family: Verdana"; >Нежный и изящный</p>
             <div class="text-part_images_prices">
-              <br>
               <br>
               <br>
               <br>
@@ -729,7 +678,6 @@ footer {
               <br>
               <br>
               <br>
-              <br>
               <span class="inline-text" style="font-family: Verdana";>Цена:</span>
             </div> 
             <div class="text-part_images_prices_2">
@@ -745,8 +693,7 @@ footer {
           </div>  
           <div class="rectangle-4_2"><div class="text-part_images">
             <div class="text_for_catalog">
-            <p style="font-family: Verdana" >Planner</p></div><span style="font-family: Verdana"; >Благородный и роскошный</p>   <div class="text-part_images_prices">   
-              <br>
+            <p style="font-family: Verdana" >Planner</p></div><span style="font-family: Verdana"; >Благородный и роскошный</p>   <div class="text-part_images_prices">     
               <br>
               <br>
               <br>
@@ -768,7 +715,6 @@ footer {
             <br>
             <br>
             <br>
-            <br>
             <span class="inline-text" style="font-family: Verdana";>Цена:</span>
           </div> 
           <div class="text-part_images_prices_2">
@@ -783,7 +729,6 @@ footer {
         <div class="rectangle-6_2"><div class="text-part_images">
           <div class="text_for_catalog">
           <p style="font-family: Verdana" >Goldmine</p></div><span style="font-family: Verdana"; >Практичный и удобный</p>   <div class="text-part_images_prices">
-            <br>
             <br>
             <br>
             <br>
@@ -873,13 +818,13 @@ footer {
       </div>
     </div>
     <div class="social-icons2">  
-      <a href="https://example.com">
+      <a href="https://vk.com/club229547204">
         <img src="icons8-vk-com.svg" alt="Изображение"; >
       </a>
-      <a href="https://example.com">
+      <a href="https://t.me/INLIU_U">
         <img src="icons8-телеграмма.svg" alt="Изображение"; >
       </a>
-      <a href="mailto:example@example.com?subject=Заказ&body=Здравствуйте,%0A%0A Я бы хотел оформить заказ.">
+      <a href="mailto:bandmar86@gmail.com?subject=Заказ&body=Здравствуйте,%0A%0A Я бы хотел оформить заказ.">
         <img src="icons8-gmail.svg" alt="Изображение";>
       </a>
     </div>
