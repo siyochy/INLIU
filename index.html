@@ -170,7 +170,7 @@ function closeModal() {
         }
     }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .text-part_images_prices_2 {
             padding-bottom: 20px;
         }
@@ -341,9 +341,9 @@ function closeModal() {
 
     .c1 {
         display: flex;
-        justify-content: space-between;
+       width: 100%;
         align-items: center;
-        padding: 20px;
+        
     }
 
     img {
@@ -351,21 +351,16 @@ function closeModal() {
         height: auto;
     }
 
-  .image-part {
-        width: auto;
-        min-width: 55%;
-        display: flex;
-        justify-content: center;
-    }
+    
 
     .image-part img {
-        width: 50%;
-        height: auto;
-        border-radius: 10px;
+      width: 60%; 
+        
+     
     }
 
     .text-part {
-        width: 50%;
+        width: 80%;
         padding-right: 20px;
         text-align: center;
     }
@@ -384,7 +379,7 @@ function closeModal() {
         margin-bottom: 120px;
     }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .item_desc {
             margin-bottom: 60px;
         }
@@ -393,9 +388,9 @@ function closeModal() {
 
   .c2 {
     display: flex;
-    justify-content: space-between;
+  
     align-items: center;
-    padding: 20px;
+
     }
   .image-part2 {
     width: 50%;
@@ -404,11 +399,18 @@ function closeModal() {
     display: flex;
     }
   .image-part2 img {
-    width: 50%;
-    border-radius: 10px;
-   }
+    
+    max-width: 50%;
+    min-width: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    display: flex;
+    padding-top: 3%;
+    }
+   
   .text-part2 {
-    width: 50%;
+    width: 10%;
     padding-right: 20px;
    }
   .container {
@@ -428,7 +430,7 @@ function closeModal() {
     flex-direction: row;
    }
 
-  @media(max-width: 550px) {
+  @media(max-width: 800px) {
       .rectangle-1 {
           cursor: pointer;
           background-color: #9A867D6B;
@@ -452,7 +454,7 @@ function closeModal() {
     flex-direction: row;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-2 {
             cursor: pointer;
             background-color: #9A867D6B;
@@ -474,7 +476,7 @@ function closeModal() {
     flex-direction: row;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-3 {
             cursor: pointer;
             background-color: #9A867D6B;
@@ -496,7 +498,7 @@ function closeModal() {
     flex-direction: row;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-4 {
             cursor: pointer;
             background-color: #9A867D6B;
@@ -518,7 +520,7 @@ function closeModal() {
     flex-direction: row;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-5 {
             cursor: pointer;
             background-color: #9A867D6B;
@@ -540,7 +542,7 @@ function closeModal() {
     flex-direction: row;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-6 {
             cursor: pointer;
             background-color: #9A867D6B;
@@ -561,7 +563,7 @@ function closeModal() {
     border-bottom-left-radius: 60px;
    }
 
-  @media(max-width: 550px) {
+  @media(max-width: 800px) {
       .rectangle-1_1 {
           max-width: 100%;
           border-top-right-radius: 60px;
@@ -578,7 +580,7 @@ function closeModal() {
     border-bottom-left-radius: 60px;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width:800px) {
         .rectangle-2_1 {
             max-width: 100%;
             border-top-right-radius: 60px;
@@ -594,7 +596,7 @@ function closeModal() {
     border-bottom-left-radius: 60px;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-3_1 {
             max-width: 100%;
             border-top-right-radius: 60px;
@@ -610,7 +612,7 @@ function closeModal() {
     border-bottom-left-radius: 60px;
     }
 
-    @media(max-width: 550px) {
+    @media(max-width:800px) {
         .rectangle-4_1 {
             max-width: 100%;
             border-top-right-radius: 60px;
@@ -626,7 +628,7 @@ function closeModal() {
     border-bottom-left-radius: 60px;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-5_1 {
             max-width: 100%;
             border-top-right-radius: 60px;
@@ -642,7 +644,7 @@ function closeModal() {
     border-bottom-left-radius: 60px;
    }
 
-    @media(max-width: 550px) {
+    @media(max-width: 800px) {
         .rectangle-6_1 {
             max-width: 100%;
             border-top-right-radius: 60px;
@@ -792,8 +794,8 @@ footer {
     <ul>  
         <li><a href="#Catalog"><span style="font-family: Verdana; font-size: 22px;"> Каталог</a></li>
         <li><a href="#About"><span style="font-family: Verdana; font-size: 22px;" >О нас</a></li>
-        <li><a href="#Information"><span style="font-family: Verdana; font-size: 22px;" >Статьи</a></li>
-        <li><a href="#Us"><span style="font-family: Verdana; font-size: 22px;" >Материалы</a></li>
+        <li><a href="#Information"><span style="font-family: Verdana; font-size: 22px;" >Материалы</a></li>
+        <li><a href="#Us"><span style="font-family: Verdana; font-size: 22px;" >Почему мы?</a></li>
         <li><a href="#Place"><span style="font-family: Verdana; font-size: 22px;" >Оставить заявку</a></li>
     </ul>
   </nav>
@@ -874,7 +876,7 @@ footer {
         </div>
         <div class="rectangle-5_2"><div class="text-part_images">
           <div class="text_for_catalog">
-            <p  style="font-family: Verdana"; font si >Happy Journal</p></div><p class="item_desc"  style="font-family: Verdana"; >Благородный и изысканный</p>   <div class="text-part_images_prices">
+            <p  style="font-family: Verdana"; font si >Happy Journal</p></div><p class="item_desc"  style="font-family: Verdana"; >Аристократичный и изысканный</p>   <div class="text-part_images_prices">
             <span class="inline-text" style="font-family: Verdana";>Цена:</span>
           </div>
           <div class="text-part_images_prices_2">
